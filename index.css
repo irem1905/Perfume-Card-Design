@@ -1,11 +1,14 @@
 
 :root {
-    color-gluon-grey: #181c1f;
-    color-gray: #a0a1b1;
-    background-color-sauvignon: #f3EBE3;
-    background-color-card: #FFFFFF;
-    color-green: #408069;
+--background-color-Sauvignon: #f3ebe3;
+--color-mischka: #a6a8b3;
+--color-black: #000;
+--background-color-green: #3e8168;
+--background-color-white: #ffffff;
 }
+
+
+
 
 *,
 *::before,
@@ -15,18 +18,107 @@
 
 * {
     margin: 0;
-    font: inherit;
-    /* font-family: Playfair Display; */
 }
+
+html,
+body {
+    height: 100%;
+}
+
 
 body {
-    min-height: 100vh;
     display: grid;
+    line-height: 1.5;
     place-items: center;
+    background-color: var(--background-color-Sauvignon);
 }
 
+
+.first-card {
+    width: 300px;
+}
+
+.first-card img {
+    object-fit: cover;
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
 /* CARD-ONE */
 
-.little-picture {
-    width: 30%;
+
+.card-all {
+    display: flex;
+}
+
+
+/* CARD-TWO */
+
+.perfume-title {
+    color: var(--color-mischka);
+    font-family: fraunce;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.second-card {
+    border-radius: 0 10px 10px 0;
+    background-color: var(--background-color-white);
+    width: 290px;
+    display: inline-grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10px 20px 10px;
+}
+
+.perfume-subtitle {
+    color: var(--color-black);
+    font-family: playfair display;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.perfume-promotion {
+    color: var(--color-mischka);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.discounted-price {
+    color: var(--background-color-green);
+    font-weight: 900;
+    font-family: fraunces;
+    font-size: 35px;
+}
+
+.old-price {
+    color: var(--color-mischka);
+    text-decoration: line-through;
+}
+
+/* BUTTON */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 50px;
+    width: 218px;
+    font-family: fraunce;
+    font-weight: 600;
+    background-color: var(--background-color-green);
+    border-radius: 9px;
+}
+
+.button-text {
+    color: var(--background-color-white);
+}
+
+.icon {
+    color: var(--background-color-white);
 }
