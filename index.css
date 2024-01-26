@@ -1,0 +1,32 @@
+
+:root {
+    color-gluon-grey: #181c1f;
+    color-gray: #a0a1b1;
+    background-color-sauvignon: #f3EBE3;
+    background-color-card: #FFFFFF;
+    color-green: #408069;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:boder-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+    /* font-family: Playfair Display; */
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* CARD-ONE */
+
+.little-picture {
+    width: 30%;
+}
